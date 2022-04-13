@@ -1,0 +1,32 @@
+.heading{
+    text-align: center;
+   
+}
+
+.card-body text{
+    text-align: center;
+    border: 2px solid black;
+}
+.card{
+    text-align: center;
+    border: 2px solid black;
+}
+.accordion-item{
+    border: 1px solid black;
+}
+.button{
+    display: flex;
+    justify-content: right;
+ 
+
+
+}
+.card{
+    width: 180 rem;
+}
+.card-img-top{
+    width:18rem;
+}
+.card-body{
+    width: 18 rem;
+}
