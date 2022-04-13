@@ -1,13 +1,14 @@
 import React from 'react'
-import Ani from './Ani'
-import fundback from "./picture/fundback.jpg"
+// import Ani from './Ani'
+
 import './Style.css'
  
 
 
 
 
-export default function How_it_works() {
+export default function How_it_works(props) {
+  props.setProgress(100);
   
 
 
@@ -23,7 +24,7 @@ export default function How_it_works() {
   </div>
   </div>
 </div>
-      <Ani/>
+      
   
  <div className="img">
    
@@ -142,6 +143,7 @@ To know more about transactional processing fee, visit: www.ketto.org/support/pl
  
   )
 }
+
 
 
 
