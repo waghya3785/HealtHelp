@@ -10,6 +10,8 @@ import {
  
 } from "react-router-dom";
 import Home from './component/Home';
+import Footer from './component/Footer';
+import How_it_works from './component/How_it_works';
 
 
 
@@ -21,12 +23,14 @@ function App() {
    
       <Routes>
       <Route path='/' element={<Home/>}/> 
-      {/* <Route path='/Slider' element={<Slider/>}/>  */}
 
       <Route path='/Team' element={<Team/>}/> 
 
+      <Route path='/How_it_works' element={<How_it_works/>}/>
+
       
       </Routes>
+      <Footer/>
     </div>
     </Router>
   );
