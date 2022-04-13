@@ -10,7 +10,7 @@ export default function How_it_works() {
 
 
   return (
-    <div>
+    <div style={{backgroundColor:"#F2FFF9"}}>
       <div className="row" style={{marginTop:"65px"}}>
       <div className="card my-4 col-md-4" style={{margin:"auto" ,marginTop:"100px",boxShadow:"2px 2px 15px",borderRadius:"9px"}}>
   <img src="..." className="card-img-top" alt="..."/>
@@ -140,4 +140,3 @@ To know more about transactional processing fee, visit: www.ketto.org/support/pl
  
   )
 }
-
