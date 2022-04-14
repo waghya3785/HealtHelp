@@ -2,11 +2,10 @@ import React from 'react'
 
 export default function Detail_intro() {
     return (
-        <div>
-            <div className="container my-4">
-                <div className="container my-4 shadow-lg p-3 mb-5 bg-body rounded">
-                    <hr/>
-                    <h2 className="text-center">Interview</h2>
+        <div style={{marginTop:'50px'}}>
+            <div className="container my-4" >
+                <div className="container my-4 shadow-lg p-3 mb-5 bg-body rounded"  style={{border:'1px solid black'}}>
+                    <h2 className="text-center my-4">Interview</h2>
                     <div className="row align-items-center">
                         <div className="col">
                             <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxhUubLP9MxqRn5WyTihFEIR4UWvLDN9L7lA&usqp=CAU"} className="img-thumbnail" alt="..." />
