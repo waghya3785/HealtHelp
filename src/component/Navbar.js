@@ -17,7 +17,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               </li>
               {/* <li className="nav-item">
           <a className="nav-link" href="/">Link</a>
@@ -32,7 +32,7 @@ export default function Navbar() {
                   <li><Link className="dropdown-item"  to="/Team">Team</Link></li>
                   <li><a className="dropdown-item" href="/">Get in touch</a></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="/">Why To Donate</a></li>
+                  <li><Link className="dropdown-item" to="/Donate">Why To Donate</Link></li>
                 </ul>
               </li>
               <li className="nav-item">
