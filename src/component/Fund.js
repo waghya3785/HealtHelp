@@ -1,11 +1,13 @@
 import React from 'react'
+import "./heading.css"
+
 
 export default function Fund() {
     return (
         <div>
             <div className="container my-4">
             <hr/>
-                <h2 className="text-center">Fund Raiser</h2>
+                <h2 className="text-center ">Fund Raiser</h2>
                 <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"
@@ -123,6 +125,8 @@ export default function Fund() {
                     </div>
                 </div>
             </div>
+            <hr id='About'/>
+
         </div>
     )
 }
