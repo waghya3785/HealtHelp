@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Orphanage_slider() {
     return (
-        <div>
-            <div className="container">
-                <h2 className="text-center">About organization</h2>
+        <div >
+            <div className="container" >
+                <h2 className="text-center " style={{marginTop:"80px" ,marginBottom:"50px"}} >About organization</h2>
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
