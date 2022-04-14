@@ -13,9 +13,11 @@ export default function How_it_works(props) {
 
 
   return (
-    <div>
-      <div className="row" style={{margin : '160px 0px',justifyContent:"center"}}>
-      <div className="card my-4 col-md-4" style={{width:"18rem",justifyContent:"center",margin : '160px 0px'}}>
+    
+    <div style={{backgroundColor:'#F2FFF9'}}>
+    <div >
+      <div className="row" style={{marginTop : '69px',justifyContent:"center"}}>
+      <div className="card my-4 col-md-4" style={{width:"18rem",justifyContent:"center",margin : '160px 0px', border:'none', boxShadow:'2px 2px 6px'}}>
   <img src="..." className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">Card title</h5>
@@ -30,20 +32,20 @@ export default function How_it_works(props) {
    
     
   
-  <div style={{margin : '160px 0px'}}>
+  <div style={{marginBottom:'-40px'}}>
         
   
 
    
       
      
-<div className="card ">
-  <div className="card-body text">
+<div className="card " style={{border:'none', boxShadow:'2px 2px 6px', width:'95%', margin:'auto'}}>
+  <div className="card-body text" >
   <h4 className="heading">What is Crowdfunding?</h4><br></br>
 In its simplest form, Crowdfunding is a practice of giving monetary funds to<br></br> overcome specific social, cultural, or economic hurdles individuals face in their<br></br> daily lives.<br></br>
   </div>
 </div>
-    <div style={{margin : '60px 0px'}}>
+    <div style={{margin: '60px 0px', width:'95%', margin:'auto', marginTop:'25px'}}>
     <div  className="accordion" id="accordionExample">
   <div  className="accordion-item">
     <h2  className="accordion-header" id="headingOne">
@@ -131,6 +133,7 @@ To know more about transactional processing fee, visit: www.ketto.org/support/pl
 
 </div>
 {/* <Button variant="contained" style={{display: 'flex', justifyContent: 'right'}} color="primary" className="float-right" handleOnClick={this.onSend}></Button> */}
+</div>
 </div>
 </div>
 </div>
