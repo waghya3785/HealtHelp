@@ -7,6 +7,7 @@ import  { useState } from 'react'
 import Team from './component/Team';
 import Gallery from './component/Gallery';
 
+
 import {
   BrowserRouter as Router,
  
