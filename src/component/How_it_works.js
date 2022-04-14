@@ -1,18 +1,21 @@
 import React from 'react'
 // import Ani from './Ani'
+
+import './Style.css'
  
 
 
 
 
-export default function How_it_works() {
+export default function How_it_works(props) {
+  props.setProgress(100);
   
 
 
   return (
-    <div style={{backgroundColor:"#F2FFF9"}}>
-      <div className="row" style={{marginTop:"65px"}}>
-      <div className="card my-4 col-md-4" style={{margin:"auto" ,marginTop:"100px",boxShadow:"2px 2px 15px",borderRadius:"9px"}}>
+    <div>
+      <div className="row" style={{margin : '160px 0px',justifyContent:"center"}}>
+      <div className="card my-4 col-md-4" style={{width:"18rem",justifyContent:"center",margin : '160px 0px'}}>
   <img src="..." className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">Card title</h5>
@@ -27,21 +30,21 @@ export default function How_it_works() {
    
     
   
-  <div>
+  <div style={{margin : '160px 0px'}}>
         
   
 
    
       
      
-<div className="card" style={{boxShadow:"2px 2px 15px",borderRadius:"9px",width:"90%",margin:"auto",textAlign:"center",marginTop:"25px"}}>
+<div className="card ">
   <div className="card-body text">
   <h4 className="heading">What is Crowdfunding?</h4><br></br>
 In its simplest form, Crowdfunding is a practice of giving monetary funds to<br></br> overcome specific social, cultural, or economic hurdles individuals face in their<br></br> daily lives.<br></br>
   </div>
 </div>
     <div style={{margin : '60px 0px'}}>
-            <div className="accordion" id="accordionExample" style={{ borderRadius: "15px", width: "90%", margin:"auto" }}>
+    <div  className="accordion" id="accordionExample">
   <div  className="accordion-item">
     <h2  className="accordion-header" id="headingOne">
       <button  className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -122,8 +125,8 @@ To know more about transactional processing fee, visit: www.ketto.org/support/pl
  
 </div>
 
-<div className="d-grid gap-2 d-md-flex justify-content-md-end my-3" style={{marginRight:"47%"}}>
-  <button className="btn btn-primary me-md-2" type="button" style={{}}>Button</button>
+<div className="d-grid gap-2 d-md-flex justify-content-md-end my-3">
+  <button className="btn btn-primary me-md-2" type="button">Button</button>
   
 
 </div>
@@ -140,3 +143,4 @@ To know more about transactional processing fee, visit: www.ketto.org/support/pl
  
   )
 }
+
