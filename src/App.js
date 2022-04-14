@@ -1,8 +1,10 @@
 import Navbar from './component/Navbar';
 import './App.css';
-import LoadingBar from 'react-top-loading-bar'
+// import LoadingBar from 'react-top-loading-bar'
 import React from 'react';
 import  { useState } from 'react'
+
+import Donate from './component/Donate';
 
 import Team from './component/Team';
 import Gallery from './component/Gallery';
@@ -29,7 +31,7 @@ import PropTypes from 'prop-types'
 
 
 function App() {
-  const [progress, setProgress] = useState(0)
+  // const [progress, setProgress] = useState(0)
   // state ={
   //   progress:0
   // }
@@ -42,19 +44,22 @@ function App() {
     <Router>
     <div>
       <Navbar/>
-      <LoadingBar
+      {/* <LoadingBar
         height={1.5}
         color='#f11946'
         progress={progress} 
-      />
+      /> */}
    
       <Routes>
-      <Route path='/' element={<Home setProgress={setProgress}/>}/> 
+      <Route path='/' element={<Home/>}/> 
 
-      <Route path='/Team' element={<Team setProgress={setProgress}/>}/> 
+      <Route path='/Team' element={<Team/>}/> 
 
-      <Route path='/How_it_works' element={<How_it_works setProgress={setProgress}/>}/>
-      <Route path='/Gallery' element={<Gallery setProgress={setProgress}/>}/> 
+      <Route path='/How_it_works' element={<How_it_works/>}/>
+      <Route path='/Gallery' element={<Gallery/>}/> 
+      <Route path='/Donate' element={<Donate/>}/> 
+
+
 
       
       </Routes>
