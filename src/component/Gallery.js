@@ -1,57 +1,88 @@
-import React from "react";
-import "./Gallery.css";
-import orph1 from "./picture/orph1.jpeg";
-// import orph2 from "./picture/orph1.jpeg";
-// import orph3 from "./picture/orph1.jpeg";
-// import orph4 from "./picture/orph1.jpeg";
+import React,{useState} from "react"
+// import CloseIcon from '@mui/icons-material/Close';
+
+import Img1 from"./picture/orph1.jpeg"
+import Img2 from "./picture/orph2.jpeg"
+import Img3 from "./picture/orph3.jpeg"
+import Img4 from "./picture/orph4.jpeg"
+import Img5 from "./picture/orph5.jpeg"
+import Img6 from "./picture/orph6.jpeg"
+import Img7 from "./picture/orph7.jpeg"
+import Img8 from "./picture/orph8.jpeg"
+import Img9 from "./picture/orph9.jpeg"
+import './Gallery.css'
+
 
 export default function Gallery() {
-  function myFunction(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
-    // Get the image text
-    var imgText = document.getElementById("imgtext");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
+  let data=[
+    {
+      id:1,
+      imgSrc:Img1,
+    },
+    {
+      id:2,
+      imgSrc:Img2,
+    },
+    {
+      id:3,
+      imgSrc:Img3,
+    },
+    {
+      id:4,
+      imgSrc:Img4,
+    },
+    {
+      id:5,
+      imgSrc:Img5,
+    },
+    {
+      id:6,
+      imgSrc:Img6,
+    },
+    {
+      id:7,
+      imgSrc:Img7,
+    },
+    {
+      id:8,
+      imgSrc:Img8,
+    },
+    {
+      id:9,
+      imgSrc:Img9,
+    },
+  ]
+const [model,setModel] = useState(false);
+const [tempimgsrc,setTempImgSrc] = useState('');
+
+  const getImg =  (imgSrc) =>{
+    setTempImgSrc(imgSrc);
+    setModel(true);
+   
+
   }
-
   return (
-    <div>
-      <div className="row">
-        <div className="column">
-          <img src={orph1} alt="Nature" onClick={myFunction(this)} />
-        </div>
-        <div className="column">
-          <img src={orph1} alt="Snow" onClick={myFunction(this)} />
-        </div>
-        <div className="column">
-          <img
-            src={orph1}
-            alt="Mountains"
-            onClick={myFunction(this)}
-          />
-        </div>
-        <div className="column">
-          <img src={orph1} alt="Lights" onClick={myFunction(this)}/>
-        </div>
-      </div>
+    <>
+    <div className={model? "model open":"model"}>
+      <img src={tempimgsrc}/>
+      {/* <CloseIcon onClick={()=>setModel(false)}/>
+      */}
 
-      <div className="container">
-        <span
-          onClick="this.parentElement.style.display='none'"
-          className="closebtn"
-        >
-          &times;
-        </span>
-
-        <img id="expandedImg" style="width:100%" />
-
-        <div id="imgtext"></div>
-      </div>
     </div>
-  );
+    <div className="gallery">
+      {
+        data.map((item,index)=>{
+          return(
+            <div className="pics" key={index} onClick={()=>getImg(item.imgSrc)}>
+              <img src={item.imgSrc} style={{width:'100%'}}/>
+
+              </div>
+          )
+
+        })
+      }
+
+    </div>
+    </>
+  )
 }
