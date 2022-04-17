@@ -11,6 +11,8 @@ import Img7 from "./picture/orph7.jpeg"
 import Img8 from "./picture/orph8.jpeg"
 import Img9 from "./picture/orph9.jpeg"
 import './Gallery.css'
+import { Close } from "@material-ui/icons"
+
 
 
 export default function Gallery() {
@@ -65,8 +67,9 @@ const [tempimgsrc,setTempImgSrc] = useState('');
     <>
     <div className={model? "model open":"model"}>
       <img src={tempimgsrc}/>
-      {/* <CloseIcon onClick={()=>setModel(false)}/>
-      */}
+      <Close onClick={()=>setModel(false)} style={{backgroundColor:'white',color:'black'}}/>
+     
+      {/* <Close/> */}
 
     </div>
     <div className="gallery">
